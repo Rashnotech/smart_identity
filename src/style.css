@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "GoshaSans";
+  src: url("../src/GoshaSans-Bold.otf") format("truetype");
+}
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .table-status {
+    @apply border border-slate-300 dark:border-slate-700 p-4 text-yellow-500 dark:text-yellow-400;
+  }
+  .table-data {
+    @apply border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400;
+  }
+  .show {
+    @apply md:w-1/4 font-Roboto ease-linear duration-300 w-3/4 bg-slate-50 px-4 py-6 h-screen md:ml-0 relative;
+  }
+  .admin {
+    @apply md:w-1/4 font-Roboto ease-linear duration-300 bg-[#008287] w-3/4 px-4 py-6 h-screen md:ml-0 relative;
+  }
+  .current {
+    @apply bg-teal-600/50 flow-root w-full rounded-md  px-2 py-3 font-bold hover:ease-in-out text-slate-50 dark:text-slate-100 duration-200;
+  }
+  .currentAdmin {
+    @apply bg-teal-600/50 flow-root w-full px-2 py-3 rounded-md font-bold hover:ease-in-out text-slate-50 duration-200;
+  }
+}
